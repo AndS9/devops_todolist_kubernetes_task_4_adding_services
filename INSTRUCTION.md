@@ -15,7 +15,7 @@
    ```
 2. In shell run curl:
     ```
-   http://todoapp-service.todoapp.svc.cluster.local
+   curl http://todoapp-service.todoapp.svc.cluster.local
    ```
 
 Test ClusterIP using port-forward:
