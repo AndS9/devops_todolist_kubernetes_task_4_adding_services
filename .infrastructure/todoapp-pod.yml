@@ -55,6 +55,8 @@ spec:
             key: SECRET_KEY
       - name: DEBUG
         value: "False"
+      - name: DATABASE_URL
+        value: postgres://user:password@host:5432/mydb
     ports:
     - containerPort: 8080
     livenessProbe:
