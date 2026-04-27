@@ -9,6 +9,14 @@ spec:
   containers:
   - name: todoapp
     image: ikulyk404/todoapp:3.0.0
+    env:
+      - name: SECRET_KEY
+        valueFrom:
+          secretKeyRef:
+            name: todolist-django-secret
+            key: SECRET_KEY
+      - name: DEBUG
+        value: "False"
     ports:
     - containerPort: 8080
     livenessProbe:
@@ -37,6 +45,14 @@ spec:
   containers:
   - name: todoapp
     image: ikulyk404/todoapp:3.0.0
+    env:
+      - name: SECRET_KEY
+        valueFrom:
+          secretKeyRef:
+            name: todolist-django-secret
+            key: SECRET_KEY
+      - name: DEBUG
+        value: "False"
     ports:
     - containerPort: 8080
     livenessProbe:

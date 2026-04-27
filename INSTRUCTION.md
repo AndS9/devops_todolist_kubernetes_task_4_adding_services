@@ -1,10 +1,10 @@
 ## Creating all resources:
  From ./.infrastructure workdir run commands in this order:
  ```
- kubectl apply -f .\clusterIp.yml
- kubectl apply -f .\nodeport.yml
- kubectl apply -f .\todoapp-pod.yml
- kubectl apply -f .\busybox.yml
+ kubectl apply -f ./clusterIp.yml
+ kubectl apply -f ./nodeport.yml
+ kubectl apply -f ./todoapp-pod.yml
+ kubectl apply -f ./busybox.yml
  ```
 ## Testing services:
  Test ClusterIP from busybox:
